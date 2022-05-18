@@ -4,6 +4,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 import Dashboard from './src/screens/Dashboard';
+import Register from './src/screens/Register';
 
 import {useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_700Bold} from '@expo-google-fonts/poppins';
 
@@ -22,8 +23,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard />
-      <StatusBar style="auto" />
+      <Register />
+      {/* <StatusBar style="auto" /> */}
     </ThemeProvider>
   );
 }
